@@ -5,12 +5,12 @@ const Main = () => {
   return (
     <div>
       <Navbar/>
-      <div className='w-full flex items-center justify-center'>
-      <div className='lg:h-[530px] lg:h-max-[530px] lg:w-[800px]  mt-[120px] lg:mt-[30px] flex flex-col lg:items-center pl-2 pr-2'>
-        <h1 className=' text-3xl lg:text-3xl lg:pt-5  font-bold'><span className='text-[#c82217]'>Git</span>Hub Read<span className='text-[#c82217]'>me</span> Generator</h1>
+      <div className='w-full flex items-center justify-center lg:mb-0 mb-[30px]'>
+      <div className='lg:h-[530px] lg:h-max-[530px] lg:w-[800px]  mt-[80px] lg:mt-[30px] flex flex-col lg:items-center pl-3 pr-3'>
+        <h1 className=' text-3xl lg:text-3xl lg:pt-5 text-center font-bold'><span className='text-[#c82217]'>Git</span>Hub Read<span className='text-[#c82217]'>me</span> Generator</h1>
           
           <form action="">
-            <div className='flex justify-between items-center mt-8'>
+            <div className='flex justify-between items-center lg:mt-[55px] mt-[70px]'>
             <h1 className='mt-2 font-semibold text-xl'>Paste Code Here</h1>
             <button className="md:block bg-[#F03C2E] px-5 py-2 rounded-full hover:bg-[#c82217] hover:text-white transition-all">
                         Generate
