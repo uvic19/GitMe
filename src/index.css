@@ -23,3 +23,16 @@ body::-webkit-scrollbar{
 body::-webkit-scrollbar-thumb{
   background-color: rgb(63, 63, 63);
 }
+
+textarea::-webkit-scrollbar{
+  display: none;
+}
+
+textarea:focus{
+  outline: none;
+}
+
+*::selection{
+  background-color: #CF271B;
+  color: white;
+}

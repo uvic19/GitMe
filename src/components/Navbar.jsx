@@ -18,9 +18,9 @@ const Navbar = () => {
     return (
         <header className="relative w-full z-10">
             {/* Navbar Container */}
-            <div className="absolute top-0 left-0 w-full z-10 bg-stone-950">
+            <div className=" top-0 left-0 w-full z-10 bg-stone-950">
                 <div className="container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-8 bg-transparent">
-                    <img src="./gitmelog.svg" alt="Logo" className="h-[40px]"/>
+                    <img src="./gitmelog.svg" alt="Logo" className="h-[40px]" to={"/"}/>
 
                     {/* Desktop Links */}
                     <ul className="hidden md:flex gap-10 text-white font-semibold">
