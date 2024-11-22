@@ -4,6 +4,9 @@ import Footer from "./Footer";
 import { motion } from "framer-motion";
 
 const Home = () => {
+  function openWin() {
+    window.location.href="http://localhost:5173/main";
+  }
   return (
     <div>
       <Navbar />
@@ -32,7 +35,8 @@ const Home = () => {
           Create polished, professional README files for your GitHub projects in
           minutes.
         </motion.span>
-        <button className="md:block mt-5 bg-[#F03C2E] px-8 py-2 rounded-full hover:bg-[#c82217] hover:text-white transition-all">
+        <button className="md:block mt-5 bg-[#F03C2E] px-8 py-2 rounded-full hover:bg-[#c82217] hover:text-white transition-all"
+        onClick={openWin}>
           Get Started
         </button>
       </div>
@@ -179,7 +183,7 @@ const Home = () => {
           whileInView={{opacity: 1, y: 0}}
           viewport={{once: true}}
 
-          className="lg:text-[30px] font-semibold text-[30px] underline underline-offset-[10px]"
+          className="lg:text-[30px] font-semibold text-[30px] underline underline-offset-[10px] pr-2 pl-2"
           id="faq"
         >
           Frequently Asked Questions
