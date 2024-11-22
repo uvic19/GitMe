@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Home = () => {
   function openWin() {
-    window.location.href="http://localhost:5173/main";
+    window.location.href="/main";
   }
   return (
     <div>
