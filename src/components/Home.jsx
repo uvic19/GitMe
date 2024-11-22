@@ -192,7 +192,8 @@ const Home = () => {
               <p className="text-gray-500 pt-5">
               The Starter plan includes basic templates, fast README generation using the Gemini Nano API, and downloadable markdown files, perfect for small projects. It also offers email support.
               </p>
-              <button className="mt-5 bg-[#F03C2E] px-8 py-2 rounded-full hover:bg-[#c82217] hover:text-white transition-all">
+              <button className="mt-5 bg-[#F03C2E] px-8 py-2 rounded-full hover:bg-[#c82217] hover:text-white transition-all"
+              onClick={() => {alert("Will be added soon!")}}>
               Join Now
               </button>
             </div>
@@ -204,7 +205,8 @@ const Home = () => {
               <p className="text-gray-500 pt-5">
               The Premium plan offers advanced templates, faster API processing, customizable sections, and collaboration-ready outputs. It also provides priority support for quicker assistance.
               </p>
-              <button className="mt-5 bg-[#F03C2E] px-8 py-2 rounded-full hover:bg-[#c82217] hover:text-white transition-all">
+              <button className="mt-5 bg-[#F03C2E] px-8 py-2 rounded-full hover:bg-[#c82217] hover:text-white transition-all"
+              onClick={() => {alert("Will be added soon!")}}>
               Join Now
               </button>
             </div>
@@ -216,7 +218,8 @@ const Home = () => {
               <p className="text-gray-500 pt-5">
               The Enterprise plan includes unlimited custom templates, teams collaboration, high-performance API access, custom branding, analytics, and 24/7 premium support via email and live chat.
               </p>
-              <button className="mt-5 bg-[#F03C2E] px-8 py-2 rounded-full hover:bg-[#c82217] hover:text-white transition-all">
+              <button className="mt-5 bg-[#F03C2E] px-8 py-2 rounded-full hover:bg-[#c82217] hover:text-white transition-all"
+              onClick={() => {alert("Will be added soon!")}}>
               Join Now
               </button>
             </div>

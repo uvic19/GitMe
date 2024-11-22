@@ -22,7 +22,7 @@ const Footer = () => {
             <p className='text-gray-400 mb-4 max-w-80'>The lastest news, articles, and resources sent to your inbox weekly</p>
             <div className='flex gap-2'>
                 <input type="email" placeholder='Enter your email' className='p-2 rounded bg-gray-800 text-gray-400 border border-gray-700 focus:ouline-none w-full md:w-auto'/>
-                <button className='py-2 px-4 rounded bg-[#F03C2E] text-white'>Subscribe</button>
+                <button className='py-2 px-4 rounded bg-[#F03C2E] text-white' onClick={() => {alert("Will be added soon!")}}>Subscribe</button>
             </div>
         </div>
       </div>
