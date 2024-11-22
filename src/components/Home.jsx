@@ -72,7 +72,7 @@ const Home = () => {
       </div>
 
       {/* Feature Section */}
-      <div className="flex justify-center mt-8 flex-col items-center mb-20">
+      <div className="flex mt-8 flex-col items-center  mb-20">
         <motion.h1
           initial={{opacity: 0, x: 100}}
           transition={{duration: 1.5}}
@@ -84,7 +84,7 @@ const Home = () => {
         >
           Features
         </motion.h1>
-        <div className="h-[420px] w-full mt-10 flex p-10 gap-8 lg:flex-nowrap flex-wrap lg:overflow-hidden overflow-scroll">
+        <div className="h-[420px] mt-10 flex p-10 gap-8 lg:flex-nowrap flex-wrap lg:overflow-hidden overflow-scroll">
           <div className="flex flex-wrap justify-center gap-8">
             <motion.div
             initial={{opacity: 0, x: -100}}
