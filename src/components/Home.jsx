@@ -186,30 +186,39 @@ const Home = () => {
         </h1>
         <div className="h-[420px] w-full mt-10 flex justify-center p-10 gap-8 lg:flex-nowrap flex-wrap">
           <div className="flex flex-wrap justify-center gap-8">
-            <div className="max-w-[340px] h-[340px] border shadow-lg rounded px-8 py-12 text-center">
+            <div className="max-w-[340px] h-[400px] border shadow-lg rounded px-8 py-12 text-center">
               <h2 className="text-2xl text-white font-medium pb-5">Starter</h2>
               <span className="text-3xl font-bold">$5</span>
               <p className="text-gray-500 pt-5">
               The Starter plan includes basic templates, fast README generation using the Gemini Nano API, and downloadable markdown files, perfect for small projects. It also offers email support.
               </p>
+              <button className="mt-5 bg-[#F03C2E] px-8 py-2 rounded-full hover:bg-[#c82217] hover:text-white transition-all">
+              Join Now
+              </button>
             </div>
           </div>
           <div className="flex flex-wrap justify-center gap-8">
-            <div className="max-w-[340px] h-[340px] border shadow-lg rounded px-8 py-12 text-center">
+            <div className="max-w-[340px] h-[400px] border shadow-lg rounded px-8 py-12 text-center">
               <h2 className="text-2xl text-white font-medium pb-5">Premium</h2>
               <span className="text-3xl font-bold">$15</span>
               <p className="text-gray-500 pt-5">
               The Premium plan offers advanced templates, faster API processing, customizable sections, and collaboration-ready outputs. It also provides priority support for quicker assistance.
               </p>
+              <button className="mt-5 bg-[#F03C2E] px-8 py-2 rounded-full hover:bg-[#c82217] hover:text-white transition-all">
+              Join Now
+              </button>
             </div>
           </div>
           <div className="flex flex-wrap justify-center gap-8">
-            <div className="max-w-[340px] h-[340px] border shadow-lg rounded px-8 py-12 text-center">
+            <div className="max-w-[340px] h-[400px] border shadow-lg rounded px-8 py-12 text-center">
               <h2 className="text-2xl text-white font-medium pb-5">Enterprise</h2>
               <span className="text-3xl font-bold pb-8">$20</span>
               <p className="text-gray-500 pt-5">
               The Enterprise plan includes unlimited custom templates, teams collaboration, high-performance API access, custom branding, analytics, and 24/7 premium support via email and live chat.
               </p>
+              <button className="mt-5 bg-[#F03C2E] px-8 py-2 rounded-full hover:bg-[#c82217] hover:text-white transition-all">
+              Join Now
+              </button>
             </div>
           </div>
         </div>

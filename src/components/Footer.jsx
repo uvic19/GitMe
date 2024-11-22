@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='pt-10 px-4 md:px-20 lg:px-32  w-full overflow-hidde bg-stone-950 mt-[650px] lg:mt-0' id='Footer'>
+    <div className='pt-10 px-4 md:px-20 lg:px-32  w-full overflow-hidde bg-stone-950 mt-[840px] lg:mt-0' id='Footer'>
       <div className='container mx-auto flex flex-col md:flex-row justify-between items-start gap-10'>
         <div className='w-full md:w-1/3 mb-8 md:mb-0'>
             <img src="/gitmelog.svg" alt="" />
