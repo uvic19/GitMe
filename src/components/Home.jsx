@@ -80,15 +80,15 @@ const Home = () => {
         >
           Features
         </motion.h1>
-        <motion.div
-        initial={{opacity: 0, x: -100}}
-        transition={{duration: 1.5}}
-        whileInView={{opacity: 1, x: 0}}
-        viewport={{once: true}}
-        
-        className="h-[420px] w-full mt-10 flex p-10 gap-8 lg:flex-nowrap flex-wrap lg:overflow-hidden overflow-scroll">
+        <div className="h-[420px] w-full mt-10 flex p-10 gap-8 lg:flex-nowrap flex-wrap lg:overflow-hidden overflow-scroll">
           <div className="flex flex-wrap justify-center gap-8">
-            <div className="max-w-[340px] h-[340px] border shadow-lg rounded px-8 py-12 text-center">
+            <motion.div
+            initial={{opacity: 0, x: -100}}
+            transition={{duration: 1.5}}
+            whileInView={{opacity: 1, x: 0}}
+            viewport={{once: true}}
+            
+            className="max-w-[340px] h-[340px] border shadow-lg rounded px-8 py-12 text-center">
               <img
                 className="w-20 h-20 rounded-full mx-auto mb-4"
                 src="/fast.svg"
@@ -101,10 +101,16 @@ const Home = () => {
                 time and boosts productivity, helping you focus on what matters
                 most—your code.
               </p>
-            </div>
+            </motion.div>
           </div>
           <div className="flex flex-wrap justify-center gap-8">
-            <div className="max-w-[340px] h-[340px] border shadow-lg rounded px-8 py-12 text-center">
+            <motion.div
+            initial={{opacity: 0, y: -50}}
+            transition={{duration: 1.5}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            
+            className="max-w-[340px] h-[340px] border shadow-lg rounded px-8 py-12 text-center">
               <img
                 className="w-20 h-20 rounded-full mx-auto mb-4"
                 src="/custom.svg"
@@ -117,10 +123,16 @@ const Home = () => {
                 multiple templates and easily edit to align with your unique
                 needs.
               </p>
-            </div>
+            </motion.div>
           </div>
           <div className="flex flex-wrap justify-center gap-8">
-            <div className="max-w-[340px] h-[340px] border shadow-lg rounded px-8 py-12 text-center">
+            <motion.div
+            initial={{opacity: 0, y: 50}}
+            transition={{duration: 1.5}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            
+            className="max-w-[340px] h-[340px] border shadow-lg rounded px-8 py-12 text-center">
               <img
                 className="w-20 h-20 mx-auto mb-4"
                 src="/api.svg"
@@ -132,10 +144,16 @@ const Home = () => {
                 GitMe is built on the Gemini Nano API, ensuring fast, reliable,
                 and efficient handling of your input for flawless results.
               </p>
-            </div>
+            </motion.div>
           </div>
           <div className="flex flex-wrap justify-center gap-8 ">
-            <div className="max-w-[340px] h-[340px] border shadow-lg rounded px-8 py-12 text-center">
+            <motion.div 
+            initial={{opacity: 0, x: 100}}
+            transition={{duration: 1.5}}
+            whileInView={{opacity: 1, x: 0}}
+            viewport={{once: true}}
+            
+            className="max-w-[340px] h-[340px] border shadow-lg rounded px-8 py-12 text-center">
               <img
                 className="w-20 h-20 mx-auto mb-4"
                 src="/hand.svg"
@@ -148,9 +166,9 @@ const Home = () => {
                 attract contributors, and deliver an exceptional user
                 experience.
               </p>
-            </div>
+            </motion.div>
           </div>
-        </motion.div>
+        </div>
       </div>
 
       {/* FAQs */}
