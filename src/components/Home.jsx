@@ -183,7 +183,7 @@ const Home = () => {
           whileInView={{opacity: 1, y: 0}}
           viewport={{once: true}}
 
-          className="lg:text-[30px] font-semibold text-[30px] underline underline-offset-[10px] pr-2 pl-2"
+          className="lg:text-[30px] font-semibold text-[27px] underline underline-offset-[10px] pr-2 pl-2"
           id="faq"
         >
           Frequently Asked Questions

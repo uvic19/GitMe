@@ -6,7 +6,7 @@ const Main = () => {
     <div>
       <Navbar/>
       <div className='w-full flex items-center justify-center'>
-      <div className='lg:h-[530px] lg:h-max-[530px] lg:w-[800px]  mt-[120px] lg:mt-[30px] flex flex-col lg:items-center'>
+      <div className='lg:h-[530px] lg:h-max-[530px] lg:w-[800px]  mt-[120px] lg:mt-[30px] flex flex-col lg:items-center pl-2 pr-2'>
         <h1 className=' text-3xl lg:text-3xl lg:pt-5  font-bold'><span className='text-[#c82217]'>Git</span>Hub Read<span className='text-[#c82217]'>me</span> Generator</h1>
           
           <form action="">
