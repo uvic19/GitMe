@@ -1,18 +1,33 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import axios from "axios";
+import DownloadLink from "react-download-link";
 
 const Main = () => {
   const [question, setQuestion] = useState("");
   const [answer, setanswer] = useState("");
   const [copied, setcopied] = useState("");
+ 
+  function downloadReadme(content) {
+    // Create a Blob from the content
+    const blob = new Blob([content], { type: "text/markdown" });
+    
+    // Create a download link
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "README.md";
+    
+    // Simulate a click on the link to trigger the download
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+}
+
 
   async function generateAnswer() {
     setanswer("loading...");
     const response = await axios({
-      url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${
-        import.meta.env.VITE_GEMINI
-      }`,
+      url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyCpKUDR13NaVzPGawJaGwxo2fuY80L_r1A",
       method: "post",
       data: {
         contents: [
@@ -40,7 +55,10 @@ ${question}`,
         ],
       },
     });
+    
+    console.log(response)
     setanswer(response["data"]["candidates"][0]["content"]["parts"][0]["text"]);
+    downloadReadme(response["data"]["candidates"][0]["content"]["parts"][0]["text"])
   }
 
   return (
@@ -66,11 +84,15 @@ ${question}`,
                 >
                   Generate
                 </button>
-                <button className="hidden md:block bg-[#F03C2E] px-8 py-2 rounded-full hover:bg-[#c82217] hover:text-white transition-all" onClick={async () => {
-                  await navigator.clipboard.writeText(`${answer}`)
-                  setcopied('write-text')}}>
-                  {copied === 'write-text' ? 'Copied' : 'Copy Readme'}
-                </button>
+                <button className="hidden md:block bg-[#F03C2E] px-8 py-2 rounded-full hover:bg-[#c82217] hover:text-white transition-all"
+                onClick={async (e) => {
+                e.preventDefault(); // Prevents page reload
+                await navigator.clipboard.writeText(`${answer}`);
+                setcopied("write-text");
+                }}
+                >
+                {copied === "write-text" ? "Copied" : "Copy Readme"}
+              </button>
               </div>
             </div>
             <textarea
