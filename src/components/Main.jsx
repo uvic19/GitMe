@@ -9,15 +9,10 @@ const Main = () => {
   const [copied, setcopied] = useState("");
  
   function downloadReadme(content) {
-    // Create a Blob from the content
     const blob = new Blob([content], { type: "text/markdown" });
-    
-    // Create a download link
     const a = document.createElement("a");
     a.href = URL.createObjectURL(blob);
-    a.download = "README.md";
-    
-    // Simulate a click on the link to trigger the download
+    a.download = "readme.md";
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
