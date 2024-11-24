@@ -2,11 +2,14 @@ import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { motion } from "framer-motion";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Home = () => {
   function openWin(){
     window.location.href="/main";
   }
+
   return (
     
     <div>
@@ -297,7 +300,7 @@ const Home = () => {
               The Starter plan includes basic templates, fast README generation using the Gemini Nano API, and downloadable markdown files, perfect for small projects. It also offers email support.
               </p>
               <button className="mt-5 bg-[#F03C2E] px-8 py-2 rounded-full hover:bg-[#c82217] hover:text-white transition-all"
-              onClick={() => {alert("Will be added soon!")}}>
+              onClick={(e)=>{ toast.error("Will be added in future updates!", {position: "bottom-right",theme: "dark",autoClose: 3000,}) }}>
               Join Now
               </button>
             </motion.div>
@@ -316,7 +319,7 @@ const Home = () => {
               The Premium plan offers advanced templates, faster API processing, customizable sections, and collaboration-ready outputs. It also provides priority support for quicker assistance.
               </p>
               <button className="mt-5 bg-[#F03C2E] px-8 py-2 rounded-full hover:bg-[#c82217] hover:text-white transition-all"
-              onClick={() => {alert("Will be added soon!")}}>
+              onClick={(e)=>{ toast.error("Will be added in future updates!", {position: "bottom-right",theme: "dark",autoClose: 3000,}) }}>
               Join Now
               </button>
             </motion.div>
@@ -335,7 +338,7 @@ const Home = () => {
               The Enterprise plan includes unlimited custom templates, teams collaboration, high-performance API access, custom branding, analytics, and 24/7 premium support via email and live chat.
               </p>
               <button className="mt-5 bg-[#F03C2E] px-8 py-2 rounded-full hover:bg-[#c82217] hover:text-white transition-all"
-              onClick={() => {alert("Will be added soon!")}}>
+              onClick={(e)=>{ toast.error("Will be added in future updates!", {position: "bottom-right",theme: "dark",autoClose: 3000,}) }}>
               Join Now
               </button>
             </motion.div>
@@ -351,6 +354,7 @@ const Home = () => {
       >
       <Footer/>
       </motion.div>
+      <ToastContainer/>
     </div>
   );
 };

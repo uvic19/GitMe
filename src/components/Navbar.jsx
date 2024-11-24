@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Navbar = () => {
@@ -22,6 +24,7 @@ const Navbar = () => {
 
     return (
         <header className="relative w-full z-10">
+            <ToastContainer/>
             {/* Navbar Container */}
             <div className=" top-0 left-0 w-full z-10 bg-stone-950">
                 <div className="container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-8 bg-transparent">
@@ -36,7 +39,7 @@ const Navbar = () => {
                     </ul>   
 
                     {/* Sign Up Button */}
-                    <button className="hidden md:block bg-[#F03C2E] px-8 py-2 rounded-full hover:bg-[#c82217] hover:text-white transition-all" onClick={openWin}>
+                    <button className="hidden md:block bg-[#F03C2E] px-8 py-2 rounded-full hover:bg-[#c82217] hover:text-white transition-all" onClick={(e)=>{ toast.error("Will be added in future updates!", {position: "bottom-right",theme: "dark",autoClose: 3000,}) }}>
                         Sign up
                     </button>
                     
