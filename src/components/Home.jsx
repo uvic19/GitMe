@@ -4,9 +4,6 @@ import Footer from "./Footer";
 import { motion } from "framer-motion";
 
 const Home = () => {
-  function openWin() {
-    window.location.href="/main";
-  }
   return (
     <div>
       <Navbar />
