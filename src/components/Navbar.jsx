@@ -31,7 +31,7 @@ const Navbar = () => {
                     <img src="./gitmelog.svg" alt="Logo" className="h-[40px]" to={"/"}/>
 
                     {/* Desktop Links */}
-                    <ul className="hidden md:flex gap-10 text-white font-semibold">
+                    <ul className="hidden md:flex text-lg gap-10 text-white font-semibold">
                         <a href="/#work" className="cursor-pointer hover:text-[#F03C2E]">How It Works</a>
                         <a href="/#feature" className="cursor-pointer hover:text-[#F03C2E]">Features</a>
                         <a href="/#faq" className="cursor-pointer hover:text-[#F03C2E]">FAQs</a>
