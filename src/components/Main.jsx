@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import axios from "axios";
-import DownloadLink from "react-download-link";
 
 const Main = () => {
   const [question, setQuestion] = useState("");
