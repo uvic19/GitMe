@@ -18,11 +18,10 @@ const Main = () => {
     document.body.removeChild(a);
 }
 
-
   async function generateAnswer() {
     setanswer("loading...");
     const response = await axios({
-      url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyCpKUDR13NaVzPGawJaGwxo2fuY80L_r1A",
+      url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${import.meta.env.VITE_GEMINI}`,
       method: "post",
       data: {
         contents: [
@@ -50,8 +49,6 @@ ${question}`,
         ],
       },
     });
-    
-    console.log(response)
     setanswer(response["data"]["candidates"][0]["content"]["parts"][0]["text"]);
     downloadReadme(response["data"]["candidates"][0]["content"]["parts"][0]["text"])
   }
@@ -67,7 +64,7 @@ ${question}`,
           </h1>
 
           <form action="">
-            <div className="flex justify-between items-center lg:mt-[55px] mt-[70px]">
+            <div className="flex lg:flex-row flex-col justify-between items-center lg:mt-[55px] mt-[70px]">
               <h1 className="mt-2 font-semibold text-xl">Paste Code Here</h1>
               <div className="flex gap-5">
                 <button
@@ -79,14 +76,14 @@ ${question}`,
                 >
                   Generate
                 </button>
-                <button className="hidden md:block bg-[#F03C2E] px-8 py-2 rounded-full hover:bg-[#c82217] hover:text-white transition-all"
+                <button className="md:block bg-[#F03C2E] px-8 py-2 rounded-full hover:bg-[#c82217] hover:text-white transition-all"
                 onClick={async (e) => {
                 e.preventDefault(); // Prevents page reload
                 await navigator.clipboard.writeText(`${answer}`);
                 setcopied("write-text");
                 }}
                 >
-                {copied === "write-text" ? "Copied" : "Copy Readme"}
+                {copied === "write-text" ? "Copied" : "Copy"}
               </button>
               </div>
             </div>

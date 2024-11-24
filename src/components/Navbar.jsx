@@ -2,6 +2,11 @@ import React, { useEffect, useState } from "react";
 
 
 const Navbar = () => {
+    function openWin() {
+        window.location.href="/login";
+      }
+
+
     const [showMobileMenu, setShowMobileMenu] = useState(false);
 
     useEffect(() => {
@@ -31,7 +36,7 @@ const Navbar = () => {
                     </ul>   
 
                     {/* Sign Up Button */}
-                    <button className="hidden md:block bg-[#F03C2E] px-8 py-2 rounded-full hover:bg-[#c82217] hover:text-white transition-all" onClick={() => {alert("Will be added soon!")}}>
+                    <button className="hidden md:block bg-[#F03C2E] px-8 py-2 rounded-full hover:bg-[#c82217] hover:text-white transition-all" onClick={openWin}>
                         Sign up
                     </button>
                     
