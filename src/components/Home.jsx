@@ -65,13 +65,7 @@ const Home = () => {
           viewport={{once: true}}
 
         className="lg:text-[20px] mt-8 font-light text-[20px] text-center p-8">
-          GitMe simplifies README creation using the robust Gemini Nano API to
-          ensure a fast and efficient experience. Start by entering your project
-          details, such as its purpose, features, and usage instructions. Then,
-          select a style that fits your project, whether sleek and simple or
-          detailed and feature-rich. Using the Gemini Nano API, your inputs are
-          processed instantly to generate a polished README, ready for download.
-          Enhance your GitHub projects with ease and professionalism!
+         GitMe simplifies README creation using the robust Gemini Nano API to ensure a fast and efficient experience. Start by entering your project details, such as its purpose, features, and usage instructions. Then, select a style that fits your project, whether sleek and simple or detailed and feature-rich. Using the Gemini Nano API, your inputs are processed instantly to generate a polished README, ready for download. For now, enjoy unlimited README generations, absolutely free! In future updates, we plan to introduce a credit system and login for enhanced features. Enhance your GitHub projects with ease and professionalism!
         </motion.p>
       </div>
 
