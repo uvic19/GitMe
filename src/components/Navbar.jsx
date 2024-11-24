@@ -29,10 +29,10 @@ const Navbar = () => {
 
                     {/* Desktop Links */}
                     <ul className="hidden md:flex gap-10 text-white font-semibold">
-                        <a href="#header" className="cursor-pointer hover:text-[#F03C2E]">How It Works</a>
-                        <a href="#feature" className="cursor-pointer hover:text-[#F03C2E]">Features</a>
-                        <a href="#faq" className="cursor-pointer hover:text-[#F03C2E]">FAQs</a>
-                        <a href="#price" className="cursor-pointer hover:text-[#F03C2E]">Pricing</a>
+                        <a href="/#work" className="cursor-pointer hover:text-[#F03C2E]">How It Works</a>
+                        <a href="/#feature" className="cursor-pointer hover:text-[#F03C2E]">Features</a>
+                        <a href="/#faq" className="cursor-pointer hover:text-[#F03C2E]">FAQs</a>
+                        <a href="/#price" className="cursor-pointer hover:text-[#F03C2E]">Pricing</a>
                     </ul>   
 
                     {/* Sign Up Button */}
@@ -64,10 +64,10 @@ const Navbar = () => {
                         />
                     </div>
                     <ul className="flex flex-col items-center gap-4 mt-8 text-lg font-medium text-white">
-                        <a href="#work" className="px-4 py-2" onClick={() => setShowMobileMenu(false)}>How It Works</a>
-                        <a href="#feature" className="px-4 py-2" onClick={() => setShowMobileMenu(false)}>Features</a>
-                        <a href="#faq" className="px-4 py-2" onClick={() => setShowMobileMenu(false)}>FAQs</a>
-                        <a href="#price" className="px-4 py-2" onClick={() => setShowMobileMenu(false)}>Pricing</a>
+                        <a href="/#work" className="px-4 py-2" onClick={() => setShowMobileMenu(false)}>How It Works</a>
+                        <a href="/#feature" className="px-4 py-2" onClick={() => setShowMobileMenu(false)}>Features</a>
+                        <a href="/#faq" className="px-4 py-2" onClick={() => setShowMobileMenu(false)}>FAQs</a>
+                        <a href="/#price" className="px-4 py-2" onClick={() => setShowMobileMenu(false)}>Pricing</a>
                     </ul>
                 </div>
             )}
