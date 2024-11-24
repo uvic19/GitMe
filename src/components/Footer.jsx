@@ -32,7 +32,7 @@ const Footer = () => {
     }
   };
   return (
-    <div className='pt-10 px-4 md:px-20 lg:px-32  w-full overflow-hidde bg-stone-950 mt-[840px] lg:mt-0' id='Footer'>
+    <div className='pt-10 px-4 md:px-20 lg:px-32  w-full overflow-hidde bg-stone-950 md:mt-[450px] mt-[840px] lg:mt-0' id='Footer'>
       <div className='container mx-auto flex flex-col md:flex-row justify-between items-start gap-10'>
         <div className='w-full md:w-1/3 mb-8 md:mb-0'>
             <img src="/gitmelog.svg" alt="" />
@@ -51,7 +51,7 @@ const Footer = () => {
             <h3 className='text-white text-lg font-bold mb-4'>Subscribe to our newsletter</h3>
             <p className='text-gray-400 mb-4 max-w-80'>The lastest news, articles, and resources sent to your inbox weekly</p>
             <div className='flex gap-2'>
-              <form onSubmit={onSubmit} className='flex gap-3'>
+              <form onSubmit={onSubmit} className='flex md:flex-col gap-3'>
                 <input type="email" name='Email' placeholder={result ? result : "Subscribe to our newsletter"} className='p-2 rounded bg-gray-800 text-gray-400 border border-gray-700 focus:ouline-none w-full md:w-auto'/>
                 <button type="submit" className='py-2 px-4 rounded bg-[#F03C2E] text-white'>Subscribe</button>
                 </form>

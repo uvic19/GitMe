@@ -82,7 +82,7 @@ const Home = () => {
         >
           Features
         </motion.h1>
-        <div className="h-[420px] mt-10 flex p-10 gap-8 lg:flex-nowrap flex-wrap lg:overflow-hidden overflow-scroll">
+        <div className="h-[420px] mt-10 flex p-10 gap-8 md:justify-center lg:flex-nowrap flex-wrap lg:overflow-hidden overflow-scroll">
           <div className="flex flex-wrap justify-center gap-8">
             <motion.div
             initial={{opacity: 0, x: -100}}
@@ -267,7 +267,7 @@ const Home = () => {
 
       {/* Pricing */}
 
-      <div className="flex lg:mt-10 mt-[300px] flex-col items-center mb-5 h-[650px]">
+      <div className="flex lg:mt-10 mt-[300px] md:mt-[110px] flex-col items-center mb-0 h-[650px]">
         <motion.h1
           initial={{opacity: 0, y: -20}}
           transition={{duration: 1.5}}

@@ -27,7 +27,7 @@ const Navbar = () => {
             <ToastContainer/>
             {/* Navbar Container */}
             <div className=" top-0 left-0 w-full z-10 bg-stone-950">
-                <div className="container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-8 bg-transparent">
+                <div className="container mx-auto flex justify-between items-center py-4 px-6  md:px-1 lg:px-8 bg-transparent">
                     <img src="./gitmelog.svg" alt="Logo" className="h-[40px]" to={"/"}/>
 
                     {/* Desktop Links */}
