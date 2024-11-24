@@ -43,7 +43,7 @@ const Home = () => {
       </div>
 
       {/* How It Works */}
-      <div className="flex justify-center mt-10 flex-col items-center mb-5">
+      <div className="flex justify-center mt-10 flex-col items-center mb-5 overflow-x-hidden">
         <motion.h1
           initial={{opacity: 0, x: 100}}
           transition={{duration: 1.5}}
@@ -72,8 +72,8 @@ const Home = () => {
         </motion.p>
       </div>
 
-      {/* Feature Section */}
-      <div className="flex mt-8 flex-col items-center  mb-20">
+      {/* Feature Section */ }
+      <div className="flex mt-8 flex-col items-center mb-20 overflow-x-hidden">
         <motion.h1
           initial={{opacity: 0, x: 100}}
           transition={{duration: 1.5}}
@@ -177,7 +177,7 @@ const Home = () => {
       </div>
 
       {/* FAQs */}
-      <div className="flex mt-20 flex-col items-center mb-5 h-[650px]">
+      <div className="flex mt-20 flex-col items-center mb-5 h-[650px] overflow-x">
         <motion.h1
           initial={{opacity: 0, y: -20}}
           transition={{duration: 1.5}}

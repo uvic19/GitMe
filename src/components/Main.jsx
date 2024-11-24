@@ -56,7 +56,7 @@ ${question}`,
     <div className="flex flex-col items-center">
       <Navbar />
       <div className="w-full flex items-center justify-center lg:mb-0 mb-[30px] flex-wrap">
-        <div className="lg:h-[530px] lg:h-max-[530px] lg:w-[800px]  mt-[80px] lg:mt-[30px] flex flex-col lg:items-center pl-3 pr-3">
+        <div className="lg:h-[530px] lg:h-max-[530px] lg:w-[800px]  mt-[80px] lg:mt-[0px] flex flex-col lg:items-center pl-3 pr-3">
           <h1 className=" text-3xl lg:text-3xl lg:pt-5 text-center font-bold">
             <span className="text-[#c82217]">Git</span>Hub Read
             <span className="text-[#c82217]">me</span> Generator
@@ -65,7 +65,7 @@ ${question}`,
           <form action="">
             <div className="flex lg:flex-row flex-col justify-between items-center lg:mt-[55px] mt-[70px]">
               <h1 className="mt-2 font-semibold text-xl">Paste Code Here</h1>
-              <div className="flex gap-5">
+              <div className="flex gap-5 mt-7 lg:mt-0">
                 <button
                   className="md:block bg-[#F03C2E] px-5 py-2 rounded-full hover:bg-[#c82217] hover:text-white transition-all"
                   onClick={(e) => {
@@ -89,16 +89,16 @@ ${question}`,
             <textarea
               type="text"
               placeholder="Write your code here:"
-              className="lg:h-[377px] lg:w-[750px] h-[550px] w-[370px] text-black mt-2 bg-gray-200 border-2 border-[white]"
+              className="lg:h-[391.5px] lg:w-[750px] h-[550px] w-[370px] text-black mt-10 lg:mt-2 bg-gray-200 border-2 border-[white]"
               value={question}
               onChange={(e) => setQuestion(e.target.value)}
             />
           </form>
         </div>
-        <div className="mt-[70px] lg:h-[550px] lg:w-[700px] h-[550px] w-[370px] text-black lg:mt-[70px] bg-gray-200 border-2 border-[white] mb-[50px] overflow-auto">
+        <div className="mt-[70px] lg:h-[550px] lg:w-[700px] h-[550px] w-[370px] text-black lg:mt-[40px] bg-gray-200 border-2 border-[white] mb-[20px] overflow-auto">
           <pre
             onClick={() => setTextToCopy(answer)}
-            className="text-black text-md mt-5"
+            className="text-black text-md mt-2 lg:mt-0"
           >
             {answer}
           </pre>
