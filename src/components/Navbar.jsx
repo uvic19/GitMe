@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Navbar = () => {
     function openWin() {
-        window.location.href="/login";
+        window.location.href="/";
       }
 
 
@@ -28,7 +28,7 @@ const Navbar = () => {
             {/* Navbar Container */}
             <div className=" top-0 left-0 w-full z-10 bg-stone-950">
                 <div className="container mx-auto flex justify-between items-center py-4 px-6  md:px-1 lg:px-8 bg-transparent">
-                    <img src="./gitmelog.svg" alt="Logo" className="h-[40px]" to={"/"}/>
+                    <img src="./gitmelog.svg" alt="Logo" className="h-[40px]" to={"/"} onClick={openWin}/>
 
                     {/* Desktop Links */}
                     <ul className="hidden md:flex text-lg gap-10 text-white font-semibold">
