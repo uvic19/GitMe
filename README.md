@@ -48,4 +48,4 @@ This project was created solo for the **Google Made with AI Hackathon**. It is m
 
 ## License
 
-[Specify your license here, e.g., MIT License]
+(MIT)
